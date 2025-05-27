@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD</title>
+    <style>
+        body {
+            background-color:cornsilk;
+        }
+        h1 {
+            font-size: 120px;
+            text-align: center;
+        }
+        main {
+            height: 1200px;
+            border: 2px solid brown;
+        }
+        section img {
+            float: right;
+            width: 700px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>FOOD</h1>
+        <section>
+            <button type="button" onclick="document.getElementById('toomuch').src='images/nevereatthismuch.jfif'">Img 1</button>
+            <img id="toomuch" src="images/nevereatthismuch.jfif" alt="Image of a pile of donuts, burgers, and other unhealthy foods">
+            <button type="button" onclick="console.log('Image should switch between donuts & burgers, and buffet table').document.getElementById('toomuch').src='images/foodbro.png'">Img 2</button>
+            <p>
+                I like food because it’s one of the few things that can instantly boost my mood.
+                Whether it’s a quick snack after school or dinner with friends, food always feels like a reward.
+                It’s something I look forward to, especially after a long day.
+            </p>
+            <p>
+                Eating food is honestly one of the best parts of the day.
+                Whether I’m super hungry or just snacking out of boredom, food always makes me feel better.
+                Eating something I enjoy makes everything feel a little better. It just hits different.
+            </p>
+            <p id="pthree">
+                What I really like about eating is that it never gets boring. 
+                There’s always something new to try, whether it’s a limited-time item at a restaurant or a random snack I haven’t had before. 
+                I like how food can surprise me with how good it tastes. 
+                Honestly, eating is just one of those simple things in life that always brings a little joy, and that’s why I love it.
+            </p>
+            <button type="button" onclick="truTh()">Truth</button>
+            <br/>
+            <p id="food">
+                <b>Food.</b>
+            </p>
+            <button type="button" onmouseover="foodOp()">Food?</button>
+            <button type="button" onclick="realOp()">NO WAIT</button>
+            <p id="foodtime"></p>
+            <button onclick="document.getElementById('foodtime').innerHTML=Date()">The last time I ate food was...</button>
+            <br/>
+            <br/>
+            <button onclick="document.getElementById('foodtime').innerText='That was a lie... I dont know when I last ate food.'">Reality</button>
+        </section>
+    </main>
+    <script>
+        //JavaScript
+        window.alert('FOOD IS AWESOME!')
+        function truTh() {
+            document.getElementById('pthree').innerText="I just like food mannnn!"
+        }
+        function foodOp() {
+            document.getElementById("food").innerHTML = "<p>I like food...<p>";
+        }
+        function realOp() {
+            document.getElementById("food").innerText = "I LOVE FOOD!";
+        }
+        let x = "hi";
+    </script>
+    <br/>
+    <br/>
+    
+    <script>
+    document.write(x);
+    </script>
+</body>
+</html>

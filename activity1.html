@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JacaScript</title>
+</head>
+<body>
+    <h1>JS is cool!</h1>
+    <p id="one">Yuh</p>
+    <p>Open the console to see more...</p>
+    <p id="two">This text will change when you click the button.</p>
+    <button type="button" onclick="changeText()">~BUTTON~</button>
+    <p id="three">Dont touch the BuTToN</p>
+    <button type="button" onclick="newText()">~BuTToN~</button>
+    <br/>
+    <button onclick="document.getElementById('hoitink').src='images/ah.jfif'">H1</button>
+    <img id="hoitink" src="images/ah.jfif">
+    <button onclick="document.getElementById('hoitink').src='images/Hoitink.jpg'">H2</button>
+    <script>
+        // JavaScript goes here
+        window.alert('Welcome... I guess.');
+        console.log("Ms. Hoitink is my mom. It's not a secret though...");
+        document.write('I like ice cream');
+        function changeText() {
+            document.getElementById("two").innerHTML = "<h2>Told you!</h2>";
+        }
+        function newText() {
+            document.getElementById("three").innerHTML = "<h3>I SAID DONT TOUCH!</h3>";
+        }
+    </script>
+</body>
+</html>

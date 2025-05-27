@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib</title>
+    <style>
+        body {
+            color:darkblue;
+            font-family: cursive;
+        }
+        h1 {
+            text-align: center;
+            font-size: 120px;
+        }
+        script {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MAD LIB</h1>
+    <script>
+        let name = prompt("Input a name");
+        let food = prompt("Input a food");
+        let verb = prompt("Input a verb");
+        let place = prompt("Input a place");
+        let emotion = prompt("Input an emotion");
+        let adjective = prompt("Input an adjective");
+        let paragraph1 = document.write(name + " was a platypus. They loved to stuff " + food + " up random places. One time they went to " 
+        + place + ". They got " + food + ", but they didn't stuff it up any thing yet... ");
+        let paragraph2 = document.write(name + " liked to " + verb + ". So they took " + food + " and went to stuff it up where they used to "
+        + verb + ". They stuffed things up places because it made them " +  emotion + "... Stuffing food up places made them feel " + adjective + ".");
+        let story = [paragraph1, paragraph2];
+        document.write(story);
+        //Valentino: Really weird and too long
+        //Sofiia: Very interesting story and explains a lot about Aishat
+        //Bella Charles: It needs a lot of help. It needs to not be Aishat-like. Make it less Aishat-like
+    </script>
+</body>
+</html>

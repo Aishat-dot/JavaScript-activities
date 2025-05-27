@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h1 {
+            font-size: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo">THIS OR THAT</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='Goooood boyyy!'">THIS</button>
+    <p><b>OR</b></p>
+    <br/>
+    <a href="hoitink.html">
+        <img id="myImage" src="images/ah.jfif" style="width:100px">
+    </a>
+    <br/>
+    <p id="lie">Ms.Hoitink is not my mom!</p>
+    <button onclick="document.getElementById('lie').style.display='none'">Lie</button>
+    <p id="truth" style="display: none;">Ms.Hoitink is my mom...</p>
+    <button onclick="document.getElementById('truth').style.display='block'">Truth</button>
+    <p id="baby">Bomboclat</p>
+    <script>
+        document.getElementById("baby").innerText="Glizzy!"
+        document.write(2025+21*5)
+        window.alert('Ms.Hoitink is my mom!')
+        console.log('Ms.Hoitink. Is. My. Mom...')
+    </script>
+    <button type="button" onclick="document.write(2025+21*5)">Don't click this</button>
+</body>
+</html>
