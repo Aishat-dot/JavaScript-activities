@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
         h1 {
             font-size: 150px;
+        }
+        nav a {
+            background-color: black;
+            font-size: 40px;
+            text-decoration: none;
+            border: 2px solid black;
+            color: aqua;
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="activity1.html">Activity 1</a>
+            <a href="activity2.html">Activity 2</a>
+            <a href="activity3.html">Activity 3</a>
+        </nav>
+    </header>
     <h1 id="demo">THIS OR THAT</h1>
     <button type="button" onclick="document.getElementById('demo').innerHTML='Goooood boyyy!'">THIS</button>
     <p><b>OR</b></p>
